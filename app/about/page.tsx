@@ -8,7 +8,7 @@ export default function About() {
         <h1 className="text-[11px] font-bold tracking-caps text-gold mb-10">about</h1>
 
         <p className="text-xl md:text-2xl leading-relaxed text-ink mb-16">
-          Mike Tommasiello is a New York-based writer and creative strategist whose work explores the intersection of culture, craft, and commerce. He contributes features and interviews to Surface Magazine, Cool Hunting and others, profiling creatives and industry titans across fashion, food, culture, sports and design. When he&apos;s not writing, he runs No.9, a creative agency specializing in social strategy and experiential partnerships.
+          Mike Tommasiello is a New York-based writer and creative strategist whose work explores the intersection of culture, craft, and commerce. He contributes features and interviews to Surface Magazine, Cool Hunting and others, profiling creatives and industry titans across fashion, food, culture, sports and design. When he&apos;s not writing, he co-runs No.9 Agency, a creative agency, where he specializes in social strategy and experiential luxury partnerships.
         </p>
 
         <div className="border-t border-border pt-10">
