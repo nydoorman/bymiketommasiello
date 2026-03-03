@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    text-transform: lowercase;
+  }
+
+  html {
+    background-color: #FAFAF8;
+    color: #0F0F0F;
+  }
+
+  ::selection {
+    background-color: #C8A96E;
+    color: #0F0F0F;
+  }
+}
+
+@layer components {
+  .label {
+    @apply text-[11px] font-bold tracking-caps text-muted;
+  }
+}
