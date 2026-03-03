@@ -12,9 +12,10 @@ export default function Nav() {
   ]
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-10 h-12 bg-cream/90 backdrop-blur-sm border-b border-border">
-      <Link href="/" className="text-[13px] font-bold tracking-caps text-ink hover:text-gold transition-colors">
-        mike tommasiello
+    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-10 h-14 bg-cream/90 backdrop-blur-sm border-b border-border">
+      <Link href="/" className="flex flex-col leading-none group">
+        <span className="text-[9px] font-semibold tracking-[0.3em] text-gold uppercase group-hover:text-gold/70 transition-colors">by</span>
+        <span className="text-[15px] font-bold tracking-[0.12em] text-ink group-hover:text-gold transition-colors">mike tommasiello</span>
       </Link>
       <div className="flex items-center gap-6">
         {links.map(({ href, label }) => (
