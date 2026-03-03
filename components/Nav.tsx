@@ -8,6 +8,7 @@ export default function Nav() {
   const links = [
     { href: '/archive', label: 'archive' },
     { href: '/topics', label: 'topics' },
+    { href: '/about', label: 'about' },
   ]
 
   return (
