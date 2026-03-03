@@ -29,14 +29,6 @@ export default function Nav() {
             {label}
           </Link>
         ))}
-        <a href="https://instagram.com/nydoorman" target="_blank" rel="noopener noreferrer"
-          className="text-[12px] font-semibold tracking-caps text-muted hover:text-ink transition-colors">
-          ig
-        </a>
-        <a href="https://threads.net/nydoorman" target="_blank" rel="noopener noreferrer"
-          className="text-[12px] font-semibold tracking-caps text-muted hover:text-ink transition-colors">
-          threads
-        </a>
       </div>
     </nav>
   )
