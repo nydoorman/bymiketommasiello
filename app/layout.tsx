@@ -10,11 +10,26 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: 'mike tommasiello',
-  description: 'cultural journalism by mike tommasiello — cool hunting & surface magazine',
+  description: 'cultural journalism by mike tommasiello — surface magazine, cool hunting and others',
   openGraph: {
     title: 'mike tommasiello',
-    description: 'cultural journalism by mike tommasiello',
+    description: 'cultural journalism by mike tommasiello — surface magazine, cool hunting and others',
     type: 'website',
+    url: 'https://bymiketommasiello.co',
+    images: [
+      {
+        url: 'https://bymiketommasiello.co/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'by mike tommasiello',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'mike tommasiello',
+    description: 'cultural journalism by mike tommasiello',
+    images: ['https://bymiketommasiello.co/og-image.png'],
   },
 }
 
