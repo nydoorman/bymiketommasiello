@@ -208,7 +208,7 @@ export default function BriefPage() {
                 <input
                   type="text"
                   required
-                  placeholder="e.g. your brand"
+                  placeholder="e.g. nydoorman"
                   value={formData.brand}
                   onChange={e => setFormData({ ...formData, brand: e.target.value })}
                   className="bg-transparent border px-4 py-3 text-[14px] outline-none transition-colors"
