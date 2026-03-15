@@ -4,14 +4,14 @@ import { useState } from 'react'
 import Link from 'next/link'
 
 const mockBrief = {
-  brand: 'roscioli nyc',
+  brand: 'via roma',
   category: 'restaurant & hospitality',
   vibe: 'roman, intimate, serious',
   sections: [
     {
       number: '01',
       label: 'brand snapshot',
-      content: `roscioli nyc is the american outpost of a roman institution — a salumeria, wine bar, and restaurant that has been feeding the city of rome for over a century. in new york, it carries that same weight: a place where the food is serious, the wine list is considered, and the room feels like it belongs somewhere it shouldn't be able to exist. it doesn't perform italianness. it is it.`,
+      content: `via roma is a roman-style salumeria and wine bar in new york city — a room that doesn't perform italianness, it just is it. the food is serious, the wine list is considered, and the space feels like it belongs in a city that has been feeding people for centuries. it arrived in new york without an introduction and didn't need one.`,
     },
     {
       number: '02',
@@ -27,7 +27,7 @@ const mockBrief = {
         {
           name: 'the serious diner',
           age: '40–58',
-          lifestyle: 'has been to rome. knows the original. came to roscioli nyc to see if it holds up. it did. tells everyone.',
+          lifestyle: 'has been to rome. knows what the real thing tastes like. came here skeptical. left converted. tells everyone.',
           platforms: 'instagram (posts once, means it), google reviews (writes paragraphs), word of mouth is their primary channel.',
         },
       ],
@@ -51,7 +51,7 @@ const mockBrief = {
         {
           name: 'the roman archive',
           description: 'content rooted in provenance — where dishes come from, why they exist, what makes them roman and not just italian.',
-          idea: 'short-form video: the chef explains the difference between carbonara as roscioli makes it and every other version you\'ve had. no music. just the explanation.',
+          idea: 'short-form video: the chef explains the difference between carbonara made the roman way and every other version you\'ve had. no music. just the explanation.',
         },
         {
           name: 'the room',
@@ -208,7 +208,7 @@ export default function BriefPage() {
                 <input
                   type="text"
                   required
-                  placeholder="e.g. roscioli nyc"
+                  placeholder="e.g. your brand"
                   value={formData.brand}
                   onChange={e => setFormData({ ...formData, brand: e.target.value })}
                   className="bg-transparent border px-4 py-3 text-[14px] outline-none transition-colors"
