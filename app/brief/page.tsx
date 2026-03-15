@@ -4,14 +4,14 @@ import { useState } from 'react'
 import Link from 'next/link'
 
 const mockBrief = {
-  brand: 'via roma',
-  category: 'restaurant & hospitality',
-  vibe: 'roman, intimate, serious',
+  brand: 'maison soleil',
+  category: 'fashion & luxury',
+  vibe: 'quiet, considered, precise',
   sections: [
     {
       number: '01',
       label: 'brand snapshot',
-      content: `via roma is a roman-style salumeria and wine bar in new york city — a room that doesn't perform italianness, it just is it. the food is serious, the wine list is considered, and the space feels like it belongs in a city that has been feeding people for centuries. it arrived in new york without an introduction and didn't need one.`,
+      content: `maison soleil is a new york-based luxury lifestyle brand operating at the intersection of fashion, interiors, and considered objects. it doesn't chase trends and doesn't need to — the work is too specific for that. founded on the premise that the most valuable things you own should be the hardest to explain to someone who doesn't already get it, maison soleil has quietly accumulated a following that reads more like a private list than a customer base.`,
     },
     {
       number: '02',
@@ -19,16 +19,16 @@ const mockBrief = {
       content: null,
       personas: [
         {
-          name: 'the cultural omnivore',
-          age: '32–45',
-          lifestyle: 'works in media, fashion, or finance. reads the times and eater in the same sitting. has opinions about natural wine and isn\'t embarrassed by them. travels to eat.',
-          platforms: 'instagram (saves everything), threads (lurks, occasionally posts takes), substack reader.',
+          name: 'the editor',
+          age: '28–42',
+          lifestyle: 'works in fashion, media, or creative direction. owns fewer things than most people but each one is a decision. follows studios, not influencers. subscribes to apartamento.',
+          platforms: 'instagram (curated, rarely posts), are.na (actively), substack (reads three, forwards one).',
         },
         {
-          name: 'the serious diner',
-          age: '40–58',
-          lifestyle: 'has been to rome. knows what the real thing tastes like. came here skeptical. left converted. tells everyone.',
-          platforms: 'instagram (posts once, means it), google reviews (writes paragraphs), word of mouth is their primary channel.',
+          name: 'the collector',
+          age: '38–55',
+          lifestyle: 'high-income, low-noise. buys once and keeps it for twenty years. doesn\'t follow brands — discovers them through people they trust. has a tailor.',
+          platforms: 'instagram (passive), word of mouth is the primary channel. email newsletter if the brand earns it.',
         },
       ],
     },
@@ -36,11 +36,11 @@ const mockBrief = {
       number: '03',
       label: 'tone of voice',
       content: null,
-      adjectives: ['authoritative', 'understated', 'specific', 'warm', 'unhurried'],
+      adjectives: ['precise', 'unhurried', 'intelligent', 'dry', 'confident'],
       sounds: [
-        { type: 'sounds like', text: 'a sommelier who doesn\'t need to prove anything.' },
-        { type: 'sounds like', text: 'a caption that tells you exactly what you\'re looking at and nothing more.' },
-        { type: 'never sounds like', text: 'a restaurant that describes itself as "an experience."' },
+        { type: 'sounds like', text: 'a caption that trusts the image to do most of the work.' },
+        { type: 'sounds like', text: 'a designer who answers "why did you make this?" in one sentence.' },
+        { type: 'never sounds like', text: 'a brand explaining why it\'s elevated.' },
       ],
     },
     {
@@ -49,24 +49,24 @@ const mockBrief = {
       content: null,
       pillars: [
         {
-          name: 'the roman archive',
-          description: 'content rooted in provenance — where dishes come from, why they exist, what makes them roman and not just italian.',
-          idea: 'short-form video: the chef explains the difference between carbonara made the roman way and every other version you\'ve had. no music. just the explanation.',
+          name: 'the object',
+          description: 'individual products treated as subjects — their materials, their making, the decisions behind them.',
+          idea: 'a weekly single-image post: one object, shot flat or in-hand, one line of copy that names one specific detail about how it was made. nothing else.',
         },
         {
-          name: 'the room',
-          description: 'the physical space as a character — light, materials, the bar, the guests, the hour.',
-          idea: 'a weekly still image: the room at a specific time of day. no caption except the time. "6:47 pm."',
+          name: 'the reference',
+          description: 'what the brand looks at — art, architecture, film, furniture. the aesthetic intelligence behind the work.',
+          idea: 'a "currently" post: one image from outside the brand — a still, a building, a painting — with one sentence on why it matters to the work. no further explanation.',
         },
         {
-          name: 'what we\'re drinking',
-          description: 'the wine list as editorial content — specific bottles, producers, regions, and why they\'re on the list.',
-          idea: 'staff pick series: one person, one bottle, one sentence on why it\'s there. shot on phone. feels internal, not produced.',
+          name: 'the process',
+          description: 'behind the work without romanticizing it. material selection, production, the friction of making something correctly.',
+          idea: 'a short video series: 60 seconds, no voiceover, no music. one step in the production of one product. let the craft speak.',
         },
         {
-          name: 'the counter',
-          description: 'the salumeria side — the products, the sourcing, the ritual of it.',
-          idea: 'a morning prep reel: no voiceover. just the counter being set. the sounds. the mise en place. 30 seconds.',
+          name: 'the life',
+          description: 'how the objects live in real spaces, on real people — not styled, not directed.',
+          idea: 'customer object portraits: one customer, one maison soleil piece, shot in their own space. a brief written exchange about how they found it.',
         },
       ],
     },
@@ -77,18 +77,18 @@ const mockBrief = {
       platforms: [
         {
           name: 'instagram',
-          why: 'primary discovery channel for the cultural omnivore audience. the visual record of the brand.',
-          format: 'feed: still images, considered and unhurried. reels: staff content, kitchen moments, short-form stories. stories: reservations, daily specials, behind the pass.',
+          why: 'the primary visual record of the brand. where the aesthetic is established and protected.',
+          format: 'feed: slow, considered, no trend-chasing. every post earns its place. reels: process content only — no talking heads. stories: behind the scenes, material arrivals, studio moments.',
         },
         {
           name: 'threads',
-          why: 'emerging high-value audience of food and culture people. low competition for restaurant brands.',
-          format: 'short takes — one sentence observations about food, hospitality, the industry. no hashtags. feels like a person, not a brand.',
+          why: 'the brand voice without the visual pressure. the opportunity to demonstrate intelligence in short form.',
+          format: 'one-sentence observations about craft, taste, and the industry. dry, specific, never promotional. reads like a person you would want to follow.',
         },
         {
-          name: 'tiktok',
-          why: 'discovery for a younger audience that will grow into the core demographic.',
-          format: 'employee-generated content: kitchen prep, pasta making, wine pours. raw, not produced. the algorithm rewards consistency over polish.',
+          name: 'email',
+          why: 'the highest-value channel for the collector audience. owned, direct, and treated like correspondence.',
+          format: 'monthly. not a newsletter — a letter. one thing the brand is thinking about, one object, one recommendation from outside the brand. no discount codes. ever.',
         },
       ],
     },
@@ -99,30 +99,30 @@ const mockBrief = {
       weeks: [
         {
           week: 'week 1',
-          theme: 'the roman standard',
-          direction: 'establish authority. lead with the heritage. introduce the dishes, the history, the why. this is who we are before we tell you anything else.',
+          theme: 'the object, up close',
+          direction: 'lead with material and craft. introduce the work through its details before introducing the brand. let people discover what this is before you tell them.',
         },
         {
           week: 'week 2',
-          theme: 'the people behind it',
-          direction: 'staff content. the faces that make the room. no formal portraits — caught moments, mid-service, off-guard. this is when the brand becomes human.',
+          theme: 'what we look at',
+          direction: 'references and influences. show the aesthetic intelligence behind the brand without narrating it. one image per day, one line. nothing more.',
         },
         {
           week: 'week 3',
-          theme: 'what we\'re drinking',
-          direction: 'wine content week. introduce the list, the philosophy, a producer. pull back the curtain on the beverage program without making it academic.',
+          theme: 'how it\'s made',
+          direction: 'process content. raw, unpolished, honest. the friction of making something correctly. this is the week that builds real trust.',
         },
         {
           week: 'week 4',
-          theme: 'the room at its best',
-          direction: 'full-service content. the energy of a packed room, a good night, a table that didn\'t want to leave. show what it feels like to be there, not just what it looks like.',
+          theme: 'the people who found it',
+          direction: 'customer stories. real spaces, real use, no styling direction. the brand in the world, not in a studio.',
         },
       ],
     },
     {
       number: '07',
       label: 'the signature idea',
-      content: `"the 6am dispatch" — a weekly iphone video, posted every friday morning, shot in the restaurant before service begins. no music. no voiceover. 60 seconds of the space being prepared: pasta being cut, the bar being stocked, the lights at their lowest. posted with one line of text — what's on the menu tonight. it's the opposite of everything food content looks like right now, which is exactly why it works. it builds a ritual. people start looking for it. it makes the dinner feel earned before it happens.`,
+      content: `"the long list" — a quarterly post, published on the first day of each season, that lists every material, reference, place, person, and object that shaped the collection. no context, no explanation. just the list. forty to sixty items, one per line. it rewards the people who already know what they're looking at, and it makes everyone else want to be one of those people. it becomes the most-saved post of the quarter every time it runs. it's the content equivalent of the brand itself: specific, confident, and not for everyone.`,
     },
   ],
 }
