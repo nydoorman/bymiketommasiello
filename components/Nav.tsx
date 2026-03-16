@@ -9,7 +9,6 @@ export default function Nav() {
     { href: '/archive', label: 'archive' },
     { href: '/topics', label: 'topics' },
     { href: '/about', label: 'about' },
-    { href: '/brief', label: 'the brief' },
   ]
 
   return (
