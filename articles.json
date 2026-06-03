@@ -1,5 +1,35 @@
 [
   {
+    "slug": "rumor-and-the-architecture-of-the-guestlist",
+    "title": "rumor and the architecture of the guestlist",
+    "publication": "Cool Hunting",
+    "date": "2026-05-10",
+    "url": "https://coolhunting.com/culture/rumor-and-the-architecture-of-the-guestlist/",
+    "subject": "Josh Zipkowitz",
+    "excerpt": "from rsvp and guestlist management to check-in tech, rumor helps event hosts make insightful decisions and understand data in real time",
+    "featured": false,
+    "image": "https://coolhunting.com/wp-content/uploads/2026/05/Rumor-Host-Guest-List-1024x768.png",
+    "topics": [
+      "culture",
+      "technology"
+    ]
+  },
+  {
+    "slug": "oddbird-and-the-architecture-of-absence",
+    "title": "oddbird and the architecture of absence",
+    "publication": "Cool Hunting",
+    "date": "2026-04-28",
+    "url": "https://coolhunting.com/culture/oddbird-and-the-architecture-of-absence/",
+    "subject": null,
+    "excerpt": "the swedish beverage brand's offerings are designed for dealcoholization from the start",
+    "featured": false,
+    "image": "https://coolhunting.com/wp-content/uploads/2026/04/Oddbird-Lifestyle-Bottles-36-1024x683.png",
+    "topics": [
+      "food & drink",
+      "design"
+    ]
+  },
+  {
     "slug": "vacheron-constantin-concours-delegance-horlogere-2026",
     "title": "Vacheron Constantin’s Concours d’Élégance Horlogère Elevates Collectors to Cultural Stewards",
     "url": "https://tinyurl.com/4ump69tf",
@@ -10,6 +40,21 @@
     "subject": null,
     "topics": [
       "design"
+    ]
+  },
+  {
+    "slug": "rae-wellness-and-the-discipline-of-restraint",
+    "title": "rae wellness and the discipline of restraint",
+    "publication": "Cool Hunting",
+    "date": "2026-02-27",
+    "url": "https://coolhunting.com/food-drink/rae-wellness-and-the-discipline-of-restraint/",
+    "subject": null,
+    "excerpt": "the clean, evidence-based formulations are made specifically for women",
+    "featured": false,
+    "image": "https://coolhunting.com/wp-content/uploads/2026/02/Rae_5-10-222436-1024x683.jpg",
+    "topics": [
+      "wellness",
+      "culture"
     ]
   },
   {
@@ -89,6 +134,21 @@
     "topics": [
       "food & drink",
       "luxury"
+    ]
+  },
+  {
+    "slug": "julie-cavil-and-the-sound-of-2008",
+    "title": "julie cavil and the sound of 2008",
+    "publication": "Cool Hunting",
+    "date": "2025-11-28",
+    "url": "https://coolhunting.com/food-drink/julie-cavil-and-the-sound-of-2008/",
+    "subject": "Julie Cavil",
+    "excerpt": "how krug turned a singular year into a three-part composition with composer max richter",
+    "featured": false,
+    "image": "https://coolhunting.com/wp-content/uploads/2025/11/KrugVineyard3%C2%A9JennyZarins-1024x670.jpg",
+    "topics": [
+      "food & drink",
+      "culture"
     ]
   },
   {
