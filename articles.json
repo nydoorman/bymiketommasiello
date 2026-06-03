@@ -43,7 +43,8 @@
     "topics": [
       "culture",
       "sport"
-    ]
+    ],
+    "hero": true
   },
   {
     "slug": "oddbird-and-the-architecture-of-absence",

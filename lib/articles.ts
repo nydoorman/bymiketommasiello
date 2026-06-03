@@ -9,6 +9,7 @@ export interface Article {
   subject: string | null
   excerpt: string
   featured: boolean
+  hero?: boolean
   image: string
   topics: string[]
 }

@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default function Home() {
   const sorted = [...articles].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-  const hero = sorted[0]
+  const hero = sorted.find(a => a.hero) ?? sorted[0]
   const surfaceArticles = sorted.filter(a => a.publication === 'Surface').slice(0, 6)
   const surfaceSlugs = new Set(surfaceArticles.map(a => a.slug))
   const rest = sorted.filter(a => a.slug !== hero.slug && !surfaceSlugs.has(a.slug))
