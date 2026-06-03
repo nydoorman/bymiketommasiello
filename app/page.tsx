@@ -6,7 +6,9 @@ import Image from 'next/image'
 export default function Home() {
   const sorted = [...articles].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
   const hero = sorted[0]
-  const rest = sorted.slice(1)
+  const surfaceArticles = sorted.filter(a => a.publication === 'Surface').slice(0, 6)
+  const surfaceSlugs = new Set(surfaceArticles.map(a => a.slug))
+  const rest = sorted.filter(a => a.slug !== hero.slug && !surfaceSlugs.has(a.slug))
 
   return (
     <>
@@ -42,12 +44,37 @@ export default function Home() {
           </div>
         </a>
 
-        {/* Gallery grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
-          {rest.map((article, i) => (
-            <GalleryCard key={article.slug} article={article} priority={i < 3} />
-          ))}
-        </div>
+        {/* Surface Magazine section */}
+        <section className="border-t border-border">
+          <div className="px-6 md:px-10 py-5 flex items-center justify-between">
+            <p className="text-[11px] font-bold tracking-caps text-ink">Surface Magazine</p>
+            <a
+              href="https://www.surfacemag.com/author/mike-tommasiello/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[11px] tracking-caps text-muted hover:text-ink transition-colors"
+            >
+              all stories
+            </a>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
+            {surfaceArticles.map((article, i) => (
+              <GalleryCard key={article.slug} article={article} priority={i < 3} />
+            ))}
+          </div>
+        </section>
+
+        {/* Everything else */}
+        <section className="border-t border-border">
+          <div className="px-6 md:px-10 py-5">
+            <p className="text-[11px] font-bold tracking-caps text-ink">More Stories</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
+            {rest.map((article, i) => (
+              <GalleryCard key={article.slug} article={article} priority={i < 3} />
+            ))}
+          </div>
+        </section>
 
       </main>
 
