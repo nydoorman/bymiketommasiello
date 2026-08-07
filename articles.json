@@ -22,12 +22,13 @@
     "url": "https://coolhunting.com/culture/outside-the-four-walls-delilah-chase-sapphire-reserve-and-the-return-of-the-supper-club/",
     "subject": null,
     "excerpt": "the h.wood group brings its dinner-and-a-show supper club to montauk with chase sapphire reserve and previews lady delilah, its first permanent new york room",
-    "featured": false,
+    "featured": true,
     "image": "https://coolhunting.com/wp-content/uploads/2026/07/176_Chase-Sapphire-Delilah_Montauk_jermcohen-7.23.2026-1024x683.jpg",
     "topics": [
       "culture",
       "food & drink"
-    ]
+    ],
+    "hero": true
   },
   {
     "slug": "static-and-signal-prada-mode-tunes-in-at-the-hotel-chelsea",
@@ -89,8 +90,7 @@
     "topics": [
       "culture",
       "sport"
-    ],
-    "hero": true
+    ]
   },
   {
     "slug": "oddbird-and-the-architecture-of-absence",
