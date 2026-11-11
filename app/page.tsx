@@ -28,6 +28,7 @@ export default function Home() {
             fill
             sizes="100vw"
             className="object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+            style={{ objectPosition: (hero as { heroPosition?: string }).heroPosition ?? 'center' }}
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent" />
