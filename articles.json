@@ -1,5 +1,20 @@
 [
   {
+    "slug": "the-inheritance-of-checo-perez-building-cadillac-from-year-one",
+    "title": "the inheritance of checo pérez: building cadillac from year one",
+    "publication": "Surface",
+    "date": "2026-10-30",
+    "url": "https://www.surfacemag.com/articles/the-inheritance-of-checo-perez-building-cadillac-from-year-one/",
+    "subject": "checo pérez",
+    "excerpt": "the driver will make his 300th grand prix start at his home race in mexico city, anchoring cadillac's debut season alongside valtteri bottas",
+    "featured": true,
+    "image": "https://d25o917d47sdqt.cloudfront.net/app/uploads/2026/10/30150755/Tu_CF1_Mexico_GP_Showrun_10.28.26_065.JPG.jpeg-copy.jpg",
+    "topics": [
+      "culture",
+      "sport"
+    ]
+  },
+  {
     "slug": "pickled-eggs-and-bourbon-with-valtteri-bottas-in-austin",
     "title": "pickled eggs and bourbon with valtteri bottas in austin",
     "publication": "Cool Hunting",
@@ -41,7 +56,8 @@
       "culture",
       "sport",
       "design"
-    ]
+    ],
+    "hero": true
   },
   {
     "slug": "heron-preston-wants-racewear-that-shows-where-it-came-from",
@@ -265,7 +281,6 @@
     "subject": null,
     "excerpt": "the h.wood group brings its dinner-and-a-show supper club to montauk with chase sapphire reserve and previews lady delilah, its first permanent new york room",
     "featured": true,
-    "hero": true,
     "image": "https://coolhunting.com/wp-content/uploads/2026/07/176_Chase-Sapphire-Delilah_Montauk_jermcohen-7.23.2026-1024x683.jpg",
     "topics": [
       "culture",
