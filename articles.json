@@ -57,7 +57,8 @@
       "sport",
       "design"
     ],
-    "hero": true
+    "hero": true,
+    "heroPosition": "50% 20%"
   },
   {
     "slug": "heron-preston-wants-racewear-that-shows-where-it-came-from",
